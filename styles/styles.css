@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
   
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -42,7 +42,7 @@ body {
     background-color: #F2F2F2;
 }
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
+
     line-height: 26px;
     font-weight: 700;
     text-align: center;
@@ -54,11 +54,12 @@ body {
 .main-index {
     color: #000000;
     background-color: #ffffff;
+}
+.welcome-background{
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-
 .advantages-list{
     text-align: center;
     color:#000000;
@@ -81,18 +82,15 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+.advantages-item:nth-child(odd){
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item:nth-child(even){
+    background-color: rgba(131, 179, 211, 0.2);
+}
 .advantages-item.pic{
     color:#FFFFFF;
     background-color: rgba(131, 179, 211);
-}
-.advantages-item.road{
-    background-color: rgba(131, 179, 211, 0.2);
-}
-.advantages-item.square{
-    background-color: rgba(131, 179, 211, 0.12);
-}
-.advantages-item.tourists{
-    background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-sub-item{
     color:#000000;
@@ -144,6 +142,8 @@ body {
 .main-inner {
     color: #ffffff;
     background-color: #ffffff;
+}
+.main-inner-background{
     background-image: url("../images/catalog/catalog-background-1.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
