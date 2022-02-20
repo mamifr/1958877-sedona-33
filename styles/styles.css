@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -33,7 +41,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-  .mailing-button{
+.mailing-button{
     background-color: #83B3D3;
 }
 
@@ -41,6 +49,24 @@ body {
     color: #000000;
     background-color: #F2F2F2;
 }
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+.navigation-logo{
+    width: 139px;
+}
+.navigation-list {
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    list-style: none;
+}
+.navigation-user {
+    max-width: 320px;
+    margin-left: auto;
+  }
 .navigation-link {
 
     line-height: 26px;
@@ -55,14 +81,30 @@ body {
     color: #000000;
     background-color: #ffffff;
 }
+.main-container {
+    flex-grow: 1;
+}
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-logo {
+    display: block;
+    margin: 0 auto;
+}
 .welcome-background{
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 .advantages-list{
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     color:#000000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-title, .interest-title{
@@ -82,19 +124,42 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+.advantages-pic{
+    Width: 800px;
+    margin: 0;
+    padding: 0;
+}
+.advantages-pic:nth-child(odd){
+    margin: 0;
+    margin-left: auto;
+}
+.advantages-item{
+    Width: 400px;
+}
 .advantages-item:nth-child(odd){
     background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-item:nth-child(even){
     background-color: rgba(131, 179, 211, 0.2);
 }
+.advantages-sub-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.advantages-text-wrapper{
+    width: 400px;
+}
 .advantages-item.pic{
+    display: flex;
     color:#FFFFFF;
     background-color: rgba(131, 179, 211);
 }
 .advantages-sub-item{
+    Width: 400px;
     color:#000000;
     background-color: rgba(131, 179, 211, 0.12);
+    list-style: none;
 }
 .advantages-sub-item.food{
     background-color: #FFFFFF;
@@ -125,17 +190,37 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+.mailing-form{
+    margin: 0;
+}
 .mailing-text{
     font-size: 22px;
     line-height: 26px;
 }
+.page-footer-container {
+    display: flex;
+    width: 1200 px;
+    margin: 0 auto;
+}
 .footer-contacts{
+    width: 720px;
+    margin-left: 38px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
+.footer-social {
+    width: 130px;
+    margin-left: 72px;
+}
+.newsletter{
+    margin-left: auto;
+    width: 115px;
+    margin-right: 72px;
+}
+
 
 /* catalog */
 
@@ -167,7 +252,20 @@ body {
     color: #FFFFFF;
 }
 
-
+.catalog-products {
+    display: flex;
+}
+.catalog-filter-group{
+    width: 150px;
+}
+.catalog-filter-group:nth-child(3){
+    width: 287px;
+}
+.catalog-filter-button{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
 .control-input{
     font-size: 16px;
     line-height: 23px;
@@ -185,9 +283,22 @@ body {
     font-weight: 400;
     text-transform: none;
 }
+.catalog-result-wrapper{
+    display: flex;
+    width: 1057px;
+}
+.catalog-result{
+    width: 350px;
+}
 .select-control{
+    margin-left: 179px;
+    width: 287px;
     font-size: 18px;
     line-height: 23px;
+}
+.select-buttons{
+    width: 160px;
+    margin-left: auto;
 }
 .catalog-filter-label{
     font-size: 18px;
@@ -199,6 +310,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
+}
+.hotel-card-list{
+    display: flex;
+    width: 1056px;
 }
 .hotel-card{
     font-size: 18px;
@@ -225,6 +340,16 @@ body {
     font-size: 20px;
     line-height: 26px;
     background-color: #83B3D3;
+    width: 620px;
+    height: 60px;
+}
+.pagination-wrapper{
+    display: flex;
+    width: 1056px;
+}
+.pagination{
+    display: flex;
+    width: 370px;
 }
 .pagination-link{
     font-size: 20px;
@@ -239,8 +364,15 @@ body {
     color: #000000;
     background-color: #F2F2F2;;
 }
+
 .hotel-presented-number{
+    width: 175px;
+    margin-left: 300px;
     color: #333333;
+}
+.select-control{
+    width: 160px;
+    margin-left: auto;
 }
 .mailing{
     color: #000000;
