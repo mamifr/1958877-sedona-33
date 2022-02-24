@@ -410,6 +410,7 @@ sub{
 }
 .hotel-card-list{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     margin-left: 72px;
     list-style-type: none;
