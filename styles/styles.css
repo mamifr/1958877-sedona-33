@@ -138,10 +138,11 @@ body {
     text-transform: uppercase;
 }
 .main-title{
-    display: flex;
-    margin-right: 240px;
+    display: block;
+    text-align: center;
+    width: 720px;
+    margin: 0 auto;
     margin-bottom: 31px;
-    margin-left: 240px;
 }
 .interest{
     padding-top: 91px;
@@ -393,7 +394,7 @@ body {
     display: flex;
     margin-right: 72px;
     margin-bottom: 53px;
-    margin-left: 71px;
+    margin-left: 72px;
 }
 .catalog-result{
     margin-right: 179px;
